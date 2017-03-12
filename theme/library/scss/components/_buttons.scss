@@ -1,0 +1,17 @@
+.button {
+	padding: 10px 30px;
+	background-color: $color-primary;
+	border-radius: 4px;
+	display: inline-block;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	
+	&:disabled {
+		opacity: 0.5;
+	}
+	
+	&.loading {
+		background-color: $color-secondary;
+	}
+}

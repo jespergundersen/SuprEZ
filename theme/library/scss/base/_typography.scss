@@ -1,0 +1,78 @@
+body {
+	color: $color-text;
+	font-weight: 400;
+	font-size: $font-size-p;
+	line-height: normal;
+	font-family: $font-base;
+}
+
+a {
+	color: $color-primary;
+	transition: color 200ms;
+	
+	&:hover {
+		color: $color-secondary;
+	}
+}
+
+h1 {
+	color: $color-heading;
+	font-size: $font-size-h1;
+	font-family: $font-heading;
+}
+
+h2 {
+	color: $color-heading;
+	font-size: $font-size-h2;
+	font-family: $font-heading;
+}
+
+h3 {
+	color: $color-heading;
+	font-weight: 700;
+	font-size: $font-size-h3;
+	font-family: $font-heading;
+}
+
+p {
+	margin-bottom: 1.5em;
+	line-height: 1.5;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+/*
+ul {
+	li {
+		margin-bottom: 0.5em;
+		padding-left: 2em;
+		
+		&:before {
+			content: "\2022";
+			display: inline-block;
+			width: 2em;
+			margin-left: -2em;
+		}
+	}
+}
+
+ol {
+	counter-reset: item;
+	
+	li {
+		margin-bottom: 0.5em;
+		padding-left: 2em;
+		
+		&:before {
+			content: counter(item) ".";
+			counter-increment: item;
+			display: inline-block;
+			width: 2em;
+			margin-left: -2em;
+		}
+	}
+}
+*/

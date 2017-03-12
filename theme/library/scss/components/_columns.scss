@@ -1,0 +1,24 @@
+.row {
+	position: relative;
+	overflow: hidden;
+}
+
+.col20 { width: 20%; }
+.col25 { width: 25%; }
+.col33 { width: 33.3333%; }
+.col50 { width: 50%; }
+.col66 { width: 66.6666%; }
+.col75 { width: 75%; }
+
+.col20,
+.col25,
+.col33,
+.col50,
+.col66,
+.col75 {
+	float: left;
+}
+
+.col100 {
+	clear: left;
+}

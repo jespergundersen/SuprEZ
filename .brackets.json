@@ -1,0 +1,21 @@
+{
+	"sass.enabled": false,
+	"path": {
+		"theme/library/scss/*.scss": {
+			"sass.enabled": false,
+			"sass.options": {
+				"outputDir": "../css/",
+				"includePaths": [
+					"base/",
+					"components/",
+					"modules/",
+					"pages/",
+					"utils/",
+					"vendor/"
+				],
+				"outputStyle": "compressed",
+				"sourceComments": false
+			}
+		}
+	}
+}

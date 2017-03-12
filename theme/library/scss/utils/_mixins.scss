@@ -1,0 +1,14 @@
+@mixin bp($breakpoint) {
+	@if $breakpoint == mobile {
+		@media (max-width: 700px) { @content; }
+	}
+	@else if $breakpoint == tablet {
+		@media (max-width: 1000px) { @content; }
+	}
+	@else if $breakpoint == laptop {
+		@media (max-width: 1100px) { @content; }
+	}
+	@else if $breakpoint == desktop {
+		@media (max-width: 1200px)  { @content; }
+	}
+}

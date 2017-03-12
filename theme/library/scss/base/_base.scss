@@ -1,0 +1,60 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+	background-color: #fff;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+::selection {
+	background: $color-primary; /* WebKit/Blink Browsers */
+	color: #fff;
+}
+
+::-moz-selection {
+	background: $color-primary; /* Gecko Browsers */
+	color: #fff;
+}
+
+.center {
+	@extend %clearfix;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	max-width: 1260px;
+}
+
+main {
+	overflow: hidden;
+}
+
+aside {
+	width: 480px;
+	background-color: $color-light;
+	float: right;
+}
+
+img {
+	&.alignnone {
+		//
+	}
+	
+	&.aligncenter {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	&.alignleft {
+		float: left;
+	}
+	
+	&.alignright {
+		float: right;
+	}
+}

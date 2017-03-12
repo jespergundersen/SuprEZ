@@ -1,0 +1,51 @@
+body {
+	margin-top: 80px;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+	box-shadow: 0 0 20px rgba(#000, 0.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	.admin-bar & {
+		top: 32px;
+		
+		@media screen and (max-width: 782px) {
+			top: 46px;
+		}
+	}
+	
+	.search-form {
+		float: right;
+	}
+}
+
+.logo {
+	@extend %hide-text;
+	display: block;
+	width: 100px;
+	height: 100%;
+	background: url("../images/logo.svg") center / contain no-repeat $color-primary;
+	float: left;
+}
+
+#nav-primary {
+	overflow: hidden;
+	float: right;
+	
+	li {
+		float: left;
+	}
+	
+	a {
+		display: block;
+	}
+	
+	.current-menu-item a {
+		color: $color-secondary;
+	}
+}
